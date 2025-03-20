@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <form id="registrationForm">
+            <label for="fullname">Nombre Completo:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Repetir Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="address">Dirección de Despacho (Opcional):</label>
+            <input type="text" id="address" name="address">
+
+            <button type="submit">Registrar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

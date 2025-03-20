@@ -107,3 +107,20 @@ header p {
     text-align: center; /* Centrar el texto */
     text-transform: uppercase; /* Convertir en mayúsculas */
 }
+.btn {
+    font-size: 25px; /*tamaño*/
+    color: white; /* Texto*/
+    background-color: #ff9100;; /* Fondo */
+    border: 2px solid rgb(233, 220, 106); /* Marco*/
+    padding: 7px 10px; /* espacio botoness */
+    text-decoration: none; /*subrayado */
+    display: inline-block; /* Para que se vea correctamente */
+    margin-top: 40px; /* bajar el boton    */
+    cursor: pointer; /* cambia el cursor para indicar que es clbicleable */
+    transition: background-color 1.5s, color 2.2s; /*velocidad de el hover */
+}
+
+.btn:hover {
+    background-color: black; /* fondo al posar mouse */
+    color:rgb(255, 0, 0); /* colo del texto al psoar mouse */
+}
