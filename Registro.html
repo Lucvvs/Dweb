@@ -8,8 +8,12 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Formulario de Registro</h1>
+    <div class="container-form">
+        <h1 class="titulo-form">
+            Formulario de Registro
+            <img src="imagenes/logo.jpg" alt="Logo" class="logo-form">
+        </h1>
+
         <form id="registrationForm">
             <label for="fullname">Nombre Completto:</label>
             <input type="text" id="fullname" name="fullname" required>
@@ -32,14 +36,17 @@
             <label for="address">Dirección de Despacho (Opcional):</label>
             <input type="text" id="address" name="address">
 
-            <button type="submit">Registrar</button>
-            <button type="reset">Limpiar</button>
+            <div class="botones-form">
+                <button type="submit" class="btn-reg">Registrar</button>
+                <button type="reset" class="btn-limp">Limpiar</button>
+            </div>
         </form>
+
+        <div class="text-center my-4">
+            <button onclick="history.back()" class="btn-volver">← Retroceder</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-

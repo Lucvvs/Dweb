@@ -2,36 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infantiles - JogO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Infantiles</h1>
+        <h1 class="titulogo">
+            <img src="imagenes/logo.jpg" alt="Logo" class="logo-titulo">
+            Infantiles
+            <img src="imagenes/logo.jpg" alt="Logo" class="logo-titulo">
+        </h1>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="categoria-accion.html">Accion</a>
+            <a href="categoria-accion.html">Acción</a>
             <a href="categoria-rpg.html">RPG</a>
             <a href="categoria-carrera.html">Carreras</a>
             <a href="categoria-deportes.html">Deportes</a>
         </nav>
     </header>
 
-    <main>
-        <div class="juegos">
-            <div class="juego">
-                <img src="imagenes/lego.png" alt="LEGO">
-                <h2>LEGO Marvel 2 </h2>
-                <p>🧱Toda la emocionante historia de marvel construida en legos🧱</p>
-                <p class="precio">$11.990 CLP</p>
+    <main class="container my-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col">
+                <div class="juego">
+                    <img src="imagenes/lego.png" alt="LEGO">
+                    <h2>LEGO Marvel 2</h2>
+                    <p>🧱 Toda la emocionante historia de Marvel construida en legos 🧱</p>
+                    <p class="precio">$11.990 CLP</p>
+                </div>
             </div>
-            <div class="juego">
-                <img src="imagenes/minecraft.png" alt="MINECRAFT">
-                <h2>MINECRAFT Full Edition</h2>
-                <p>⛏️Un mundo de geometricas aventuras construidas en bloques⛏️ </p>
-                <p class="precio">$9.990 CLP</p>
+            <div class="col">
+                <div class="juego">
+                    <img src="imagenes/minecraft.png" alt="Minecraft">
+                    <h2>Minecraft Full Edition</h2>
+                    <p>⛏️ Un mundo de geométricas aventuras construidas en bloques ⛏️</p>
+                    <p class="precio">$9.990 CLP</p>
+                </div>
             </div>
+        </div>
+        <div class="text-center my-4">
+            <button onclick="history.back()" class="btn-volver">← Retroceder </button>
         </div>
     </main>
 

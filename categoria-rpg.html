@@ -2,36 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG - JogO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>RPG</h1>
+        <h1 class="titulogo">
+            <img src="imagenes/logo.jpg" alt="Logo" class="logo-titulo">
+            RPG
+            <img src="imagenes/logo.jpg" alt="Logo" class="logo-titulo">
+        </h1>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="categoria-accion.html">Accion</a>
+            <a href="categoria-accion.html">Acción</a>
             <a href="categoria-infantiles.html">Infantiles</a>
             <a href="categoria-carrera.html">Carreras</a>
             <a href="categoria-deportes.html">Deportes</a>
         </nav>
     </header>
 
-    <main>
-        <div class="juegos">
-            <div class="juego">
-                <img src="imagenes/dark.png" alt="DS3">
-                <h2>DARK SOUL 3 </h2>
-                <p>⚔️Explora entornos hostiles llenos de armas mediavales y magias oscuras⚔️ </p>
-                <p class="precio">$17.990 CLP</p>
+    <main class="container my-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col">
+                <div class="juego">
+                    <img src="imagenes/dark.png" alt="Dark Souls 3">
+                    <h2>Dark Souls 3</h2>
+                    <p>⚔️ Explora entornos hostiles llenos de armas medievales y magias oscuras ⚔️</p>
+                    <p class="precio">$17.990 CLP</p>
+                </div>
             </div>
-            <div class="juego">
-                <img src="imagenes/CYBER.PNG" alt="CYB">
-                <h2>CYBERPUNK 2077</h2>
-                <p>🤖Mercenarios, tecnologia experimental cibernetica, disparos y acertijos🤖 </p>
-                <p class="precio">$41.990 CLP</p>
+            <div class="col">
+                <div class="juego">
+                    <img src="imagenes/CYBER.PNG" alt="Cyberpunk 2077">
+                    <h2>Cyberpunk 2077</h2>
+                    <p>🤖 Mercenarios, tecnología experimental cibernética, disparos y acertijos 🤖</p>
+                    <p class="precio">$41.990 CLP</p>
+                </div>
             </div>
+        </div>
+        <div class="text-center my-4">
+            <button onclick="history.back()" class="btn-volver">← Retroceder </button>
         </div>
     </main>
 
